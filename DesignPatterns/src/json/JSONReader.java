@@ -9,11 +9,11 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import singleton.model.Book;
+import patterns.model.Book;
 
 public class JSONReader {
   public static void main(final String[] args) throws JsonParseException, JsonMappingException, IOException {
-    singleton.model.Book book = new Book("Carte 1");
+    Book book = new Book("Carte 1");
 
     final ObjectMapper mapper = new ObjectMapper();
     final HashMap<String, Object> readValue = mapper.readValue(new File("book.json"), HashMap.class);

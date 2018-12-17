@@ -10,12 +10,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import singleton.model.Element;
-import singleton.model.Image;
-import singleton.model.ImageProxy;
-import singleton.model.Paragraph;
-import singleton.model.Section;
-import singleton.model.Table;
+import patterns.model.Element;
+import patterns.model.Image;
+import patterns.model.ImageProxy;
+import patterns.model.Paragraph;
+import patterns.model.Section;
+import patterns.model.Table;
 
 public class JSONBuilder implements Builder {
 

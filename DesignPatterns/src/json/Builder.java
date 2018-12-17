@@ -7,11 +7,11 @@ import java.util.HashMap;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-import singleton.model.Element;
+import patterns.model.Element;
 
 public interface Builder {
 
-  Element getResult();
+  patterns.model.Element getResult();
 
   void build() throws JsonParseException, JsonMappingException, IOException;
 
